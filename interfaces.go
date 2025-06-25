@@ -85,7 +85,8 @@ type CommandSpec struct {
 	Name        string
 	Description string
 	Interactive bool
-	Handler     string // プラグイン内のハンドラー名
+	Handler     string   // プラグイン内のハンドラー名
+	ArgPrompts  []string // コマンド引数のプロンプト
 }
 
 // MajorModeSpec はメジャーモード仕様
